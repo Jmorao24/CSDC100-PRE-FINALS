@@ -1,0 +1,10 @@
+/* Minimal custom styles for layout and small enhancements */
+:root{--hero-gradient: linear-gradient(135deg,#4f46e5 0%,#06b6d4 100%);} 
+body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+.hero{background: var(--hero-gradient);}
+.card-img-top{max-height:220px;object-fit:cover}
+.card{border-radius:0.6rem}
+.accordion-button:focus{box-shadow:none}
+@media (prefers-reduced-motion: no-preference){
+  .hero h1{transform:translateY(0);transition:transform .6s ease;}
+}
